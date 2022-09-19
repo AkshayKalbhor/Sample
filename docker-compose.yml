@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  video-service:
+    build: ./video
+    volumes:
+      - ./video/usr/src/app
+    ports:
+      - 5001:80
+    
